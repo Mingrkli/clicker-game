@@ -1,0 +1,22 @@
+nav {
+    border-bottom: 2px solid $c-gold;
+
+    a {
+        padding: 0.5rem 1rem;
+        transition: $transition;
+
+        &.router-link-exact-active {
+            color: $c-gold;
+        }
+
+        &:hover {
+            color: black;
+            background: $c-gold;
+            box-shadow: $box-shadow $c-gold;
+        }
+
+        &:active {
+            filter: $filter-brightness;
+        }
+    }
+}

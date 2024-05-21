@@ -1,0 +1,81 @@
+// Globals
+// =========================================================
+// Colors
+$bg-color: rgb(10, 10, 10);
+$c-gold: rgb(255, 200, 0);
+$c-white: rgb(230, 230, 230);
+$c-cyan: rgb(0, 230, 203);
+
+// Hover Settings
+$box-shadow: 0 0 10px 1px;
+$filter-brightness: brightness(1.2);
+
+// Other Settings
+$transition: 200ms ease-out;
+
+// Resets
+// =========================================================
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Elements
+// =========================================================
+body {
+    color: $c-white;
+    background-color: $bg-color;
+}
+
+a {
+    font-size: 1.5rem;
+    color: $c-white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+// Font Sizes
+// =========================================================
+h1 {
+    font-size: 3rem;
+}
+
+// Classes
+// =========================================================
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.flex-col {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+
+    font-size: 1.5rem;
+    color: black;
+    background: $c-cyan;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        box-shadow: $box-shadow $c-cyan;
+
+        filter: $filter-brightness;
+    }
+}
+
+// Other scss files
+// =========================================================
+@import "./navbar.scss";
