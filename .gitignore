@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Other Folder / Files
+backend/src/main/resources/application-prod.yml
+backend/src/main/resources/application.properties
